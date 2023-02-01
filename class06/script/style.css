@@ -1,0 +1,27 @@
+.div-1{
+    width: 1000px;
+    border: 25px solid aqua;
+    height: 500px;
+    padding: 50px;
+    background-color: green;
+    align-items: center;
+    padding: 50px ;
+
+}
+.div-2{
+    width: 300px;
+    border: 25px solid aqua;
+    height: 300px;
+    margin: auto;
+    /* align: left; */
+    padding: 30px;
+    margin-top: 50px;
+    background-color: red;
+    border-radius: 80%;
+    
+    
+    
+    
+    
+
+}

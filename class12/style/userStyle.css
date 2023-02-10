@@ -1,0 +1,8 @@
+header{
+    height: 100px;
+}
+
+header img{
+    height: 100px !important;
+    width: 100%;
+}

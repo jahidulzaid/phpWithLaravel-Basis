@@ -1,0 +1,90 @@
+.hero-image{
+    background-image: url('img/hero-bg.jpg');
+    background-image: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+.hero-text{
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    
+
+
+}
+
+.dot-in-span{
+    font-weight: 700;
+}
+
+.fontawesome{
+    margin-bottom: 100px;
+    padding: 100px;
+    text-align: center;
+    
+}
+
+.fontawesome-icon{
+    border: 2px solid cornflowerblue;
+    
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about-section{
+    padding-bottom: 100px;
+}
+
+.feature-section{
+    padding-bottom: 100px;
+}
+
+.fontawesome-service{
+    border: 1px solid gray;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    height: 300px;
+    width: 300px;
+    
+
+}
+
+.fontawesome-border{
+    height: 60px;
+    width: 60px;
+    background: yellow;
+    
+    /* border: 1px solid yellow; */
+}
+
+.service-contents{
+    align-items: center !important;
+}
+
+
+.call-to-action {
+    background-image: url('img/cta-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+
+.counts-section{
+    padding-top: 100px;
+}
+
+
+.testimonial{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.testimonial-img{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 10%;
+}

@@ -1,0 +1,7 @@
+learnt
+
+bootstrap 5.2
+1. menu
+2. nav-bar
+3. card
+4. modal

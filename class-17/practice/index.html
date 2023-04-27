@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 17</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;800&family=Poppins:wght@100;300;500;600&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="slider">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="image/logo.gif" class="img-fluid logo" alt="">
+                </div>
+                <div class="col-md-9">
+                    <img src="image/image.jpg" class="img-fluid banner" alt="">
+                </div>
+            </div>
+        </header>
+
+        <div class="slider">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                  <h5 class="text-white h4">Collapsed content</h5>
+                  <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+              </div>
+              <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  
+              
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <section>
+
+        </section>
+
+
+
+    </div>
+
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="bootstrap.bundle.js" ></script>
+    <script src="owl.carousel.js"></script>
+  
+    <script>
+  $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:3,
+              nav:false
+          },
+          1000:{
+              items:3,
+              nav:true,
+              loop:false
+          }
+      }
+  })
+    </script>
+    
+  
+
+
+
+</body>
+</html>

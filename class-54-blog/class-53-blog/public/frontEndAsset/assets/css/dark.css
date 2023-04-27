@@ -1,0 +1,80 @@
+
+/* ================================================================================== 
+										Dark Mode
+===================================================================================== */
+.kavya-dark,
+.kavya-dark .card
+{
+  background:#181818;
+  color:#aaa;
+}
+.kavya-dark header,
+.kavya-dark #sticky-top,
+.kavya-dark .kavya-navbar .drop-menu,
+.kavya-dark .banner-carousel .slick-prev
+{
+  background:#111;
+}
+.kavya-dark .kavya-navbar .nav-menu .nav-item a,
+.kavya-dark .title-font a,
+.kavya-dark .section-title h2,
+.kavya-dark .sidebar-item a,
+.kavya-dark .sidebar-title h5,
+.kavya-dark .sticky-sidebar-content h3,
+.kavya-dark .sticky-sidebar .author-desc h5,
+.kavya-dark .sticky-sidebar-content h3
+{
+  color:#fff;
+}
+.kavya-dark .title-font a:hover{
+  color:#303c6c;
+}
+.kavya-dark .social-links ul li a,
+.banner-carousel .slick-dots li button:before,
+.kavya-dark .author-date a,
+.kavya-dark .card-text{
+  color:#aaa;
+}
+.kavya-dark .kavya-navbar .arrow-icon span{
+  background:#fff;
+}
+.kavya-dark .kavya-navbar .nav-menu .drop-menu .drop-menu-item a:hover,
+.kavya-dark .banner-carousel .slick-prev, 
+.kavya-dark .banner-carousel .slick-next
+{
+  background:rgba(255, 255, 255, 0.1);
+}
+.kavya-dark .banner-section .banner-bg-right{
+  background:#333;
+}
+.kavya-dark .banner-section .banner-bg-left{
+  background:#000;
+}
+.kavya-dark .banner-carousel .slick-prev,
+.kavya-dark .banner-carousel .slick-next{
+  filter: brightness(0) invert(1);
+}
+.kavya-dark .featured-right .card .card-body,
+.kavya-dark .featured-posts .featured-left .card-img-overlay,
+.kavya-dark .sidebar-content .category-name-list .card-img-overlay
+{
+  background:#333;
+}
+.kavya-dark .sidebar-content{
+  border-color:#333;
+}
+.kavya-dark .banner-carousel .slick-prev:hover,
+.kavya-dark .banner-carousel .slick-next:hover{
+  background:rgba(0, 0, 0, 0);
+}
+.kavya-dark .sticky-sidebar{
+  background:#111;
+}
+@media screen and (max-width: 991px){
+.kavya-dark .kavya-navbar .nav-menu .nav-item {
+    background: #111;
+}
+.kavya-dark .kavya-navbar .nav-menu .nav-item .arrow-icon:before{
+  background:#222;
+}
+}

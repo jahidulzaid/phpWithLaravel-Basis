@@ -1,0 +1,681 @@
+/* ===================== TABLE OF CONTENT =======================
+1. Navbar responsive
+2. Home page 1 responsive
+3. Home page 2 responsive
+4. Home page 3 responsive
+5. Archive Page responsive
+6. Single Page responsive
+7. Search Page responsive
+8. About Page responsive
+9. Contact Page responsive
+10. 404 page responsive
+================================================================= */
+
+/* ================================================================================== 
+									1. Navbar Responsive
+===================================================================================== */
+.hide-toggle{
+    right: 20px;
+    position: absolute;
+    bottom: 20px;
+    display:none;
+}
+.hide-toggle i{
+    color:#303c6c;
+    border:2px solid #ddd;
+    padding:10px;
+}
+
+@media screen and (max-width: 991px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .navbar-toggle {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .hide-toggle{
+    display:block;
+}
+  .top-header .search-wrapper {
+    display: none;
+  }
+  .sticky-search {
+    visibility: visible;
+    opacity: 1;
+  }
+  .kavya-navbar {
+    padding: 0;
+    position: relative;
+  }
+  .kavya-navbar .nav-menu-wrapper {
+    justify-content: space-between;
+  }
+  .search-wrapper button {
+    margin-left: 0;
+  }
+  .kavya-navbar.sticky-header {
+    padding: 10px 0;
+  }
+  .top-header .social-links {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .top-header .social-links ul li {
+    padding-right: 8px;
+  }
+  #nav-menu-toggle {
+    position: absolute;
+    top: 100%;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    max-height: 100vh;
+    overflow: scroll;
+  }
+  .kavya-navbar .nav-menu .nav-item {
+    display: block;
+    background: #fff;
+    text-align: left;
+    padding-left: 30px;
+  }
+  .kavya-navbar .nav-menu .nav-item .nav-link{
+    display:flex;
+  }
+  .kavya-navbar .nav-menu .nav-item .arrow-icon{
+    margin-left:auto;
+  }
+  .kavya-navbar .nav-menu .nav-item .arrow-icon:before{
+    content: '';
+    height: 30px;
+    width: 40px;
+    background: #ecf1ff;
+    display: block;
+    left: 16px;
+    position: absolute;
+    top: -5px;
+    left: -14px;
+  }
+  .kavya-navbar .drop-menu {
+    position: static;
+    box-shadow: none;
+    transition:0s!important;
+  }
+  .kavya-navbar .nav-menu .nav-item:hover .drop-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .kavya-navbar .nav-menu .nav-item {
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width:992px){
+  .nav-menu{
+    display: block!important;
+  }
+}
+/* Navbar responsive end */
+
+/* ================================================================================== 
+									2. Home Page 1 responsive
+===================================================================================== */
+
+@media screen and (max-width: 1400px) {
+  .banner-carousel .slick-prev,
+  .banner-carousel .slick-next {
+    top: 625px;
+  }
+  .sticky-sidebar {
+    width: 28%;
+    margin-right: -28%;
+  }
+  .kavya-posts .instagram-posts .insta-item {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sticky-sidebar {
+    width: 40%;
+    margin-right: -40%;
+  }
+  .featured-posts .featured-left {
+    margin-bottom: 15px;
+  }
+  .featured-right {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .featured-posts .featured-right .card:first-of-type {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .banner-section .main-banner .banner-bg {
+    height: 550px;
+  }
+  .banner-section .banner-bg-left {
+    width: 50%;
+  }
+  .banner-section .banner-bg-right {
+    width: 50%;
+  }
+  .banner-section .main-banner .banner-bg-right .banner-carousel {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px 30px;
+    width: 100%;
+  }
+  .banner-section .main-banner .banner .banner-bg .banner-bg-right {
+    width: 100%;
+  }
+  .banner-section .main-banner .banner-carousel .banner-item {
+    flex-direction: column;
+  }
+  .banner-carousel .banner-img {
+    height: 300px;
+    width: 100%;
+  }
+  .banner-carousel .banner-item .banner-text {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .banner-carousel .banner-item .banner-text .title-font {
+    font-size: 20px;
+  }
+  .banner-carousel .banner-item .banner-text p {
+    display: none;
+  }
+  .banner-carousel .slick-dots {
+    right: -99%;
+  }
+  .banner-carousel .slick-prev,
+  .banner-carousel .slick-next {
+    top: auto;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+  }
+  .banner-carousel .slick-prev {
+    right: 50%;
+    left: auto;
+  }
+  .banner-carousel .slick-next {
+    left: 50%;
+  }
+  .featured-right .card .card-body{
+    bottom:-40px;
+    width:80%;
+  }
+  .footer-section {
+    padding: 40px 0;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .search-section .overlay-content {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sticky-sidebar {
+    width: 80%;
+    margin-right: -80%;
+  }
+  .section-title {
+    margin-left: 15px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+  }
+  .featured-posts .featured-left .card-img {
+    height: 350px;
+  }
+  .featured-posts .featured-left .title-font {
+    font-size: 20px;
+  }
+  .featured-posts .featured-left .card-text {
+    display: none;
+  }
+  .featured-posts .featured-right {
+    margin-bottom: 30px;
+    display: block;
+  }
+  .featured-right .card {
+    display: block;
+  }
+  .featured-posts .featured-right .card:first-of-type {
+    margin-bottom: 90px;
+    margin-right: 0;
+  }
+ 
+  .title-font {
+    font-size: 18px;
+  }
+  .category-tag-list .category-tag-name a {
+    font-size: 12px;
+  }
+  .popular-posts .recent-posts {
+    margin-top: 0;
+  }
+  .sidebar-title {
+    text-align: left;
+  }
+  .insta-posts h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .image-item:nth-of-type(even) {
+    margin-top: 0;
+  }
+}
+/* Home page 1 responsive end  */
+
+/* ================================================================================== 
+									3. Home Page 2 responsive
+===================================================================================== */
+@media screen and (max-width: 1400px) {
+  .kavya-posts .instagram-posts .insta-item {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1350px;
+  }
+
+  .kavya-home-2 .banner-section .banner-carousel .banner-item .card {
+    height: 700px;
+  }
+  .kavya-home-2 .banner-section .banner-carousel .banner-item .card-img {
+    margin-left: 100px;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .kavya-home-2 .banner-section .banner-carousel .banner-item .banner-text {
+    top: 50%;
+  }
+  .kavya-posts .posts-wrapper .long-card .card-img {
+    height: 500px;
+  }
+  .kavya-posts .instagram-posts {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .kavya-home-2 .kavya-navbar-2 {
+    padding: 10px 0;
+  }
+  .brand-name a h1 {
+    font-size: 30px;
+  }
+  .brand-name a p {
+    font-size: 30px;
+  }
+  .kavya-home-2 #nav-menu-toggle {
+    width: 300%;
+  }
+  .kavya-posts .posts-wrapper .long-card .card-img {
+    height: 300px;
+  }
+  .kavya-posts .small-card {
+    margin-bottom: 30px;
+  }
+  .kavya-home-2 .banner-section {
+    margin-top: 0;
+  }
+  .kavya-home-2 .banner-section .banner-carousel .banner-item .banner-text {
+    width: 60%;
+    top: 50%;
+  }
+  .kavya-home-2 .banner-carousel .slick-prev {
+    left: 80%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .kavya-home-2 .banner-carousel {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .kavya-home-2 .banner-section .banner-carousel .banner-item .card {
+    height: 450px;
+  }
+  .kavya-home-2 .banner-section .banner-carousel .banner-item .card-img {
+    margin-left: 50px;
+    height: 300px;
+  }
+  .kavya-home-2 .banner-section .banner-carousel .banner-item .banner-text {
+    padding: 30px;
+    width: 85%;
+    top: 50%;
+  }
+  .kavya-home-2 .banner-section .banner-carousel .banner-item .title-font {
+    font-size: 20px;
+  }
+  .kavya-home-2 .banner-carousel .slick-prev,
+  .kavya-home-2 .banner-carousel .slick-next {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    top: 360px;
+  }
+  .kavya-home-2 .banner-carousel .slick-prev {
+    left: 50%;
+  }
+  .kavya-home-2 .banner-carousel .slick-next {
+    left: 65%;
+  }
+
+  .section-padding {
+    padding: 40px 0;
+  }
+  .kavya-home-2 .popular-posts.section-padding {
+    padding-top: 10px;
+  }
+  .kavya-home-2 .popular-posts .card {
+    margin-bottom: 15px;
+  }
+  .kavya-home-2 .popular-posts .sidebar-posts {
+    margin-top: 0;
+  }
+  .kavya-home-2 .kavya-posts .posts-wrapper .long-card .card-body {
+    padding: 30px 0;
+  }
+  .kavya-posts .instagram-posts {
+    margin-bottom: 30px;
+  }
+  .kavya-posts .more-posts .card {
+    margin-bottom: 30px;
+  }
+  .kavya-home-2 .footer-section {
+    margin-top: 0;
+  }
+}
+/* Home page 2 responsive end */
+
+/* ================================================================================== 
+									4.. Home Page 3 responsive
+===================================================================================== */
+@media screen and (max-width: 991px) {
+  .kavya-home-3 .top-header .social-links {
+    margin-bottom: 0;
+    padding: 7px 0;
+  }
+  .kavya-home-3 .kavya-posts .card .card-img-top {
+    height: 100px;
+  }
+  .kavya-home-3 .kavya-posts .card-350 .card-img-top {
+    height: 200px;
+  }
+  .kavya-home-3 .footer-section {
+    text-align: center;
+  }
+  .footer-section .footer-title {
+    padding-top: 30px;
+  }
+  .kavya-home-3 .footer-section .social-links {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .kavya-home-3 .banner-section .banner-item .card {
+    height: 400px;
+  }
+  .kavya-home-3 .banner-section .banner-item .card .card-img {
+    height: 400px;
+  }
+  .kavya-home-3 .banner-carousel .slick-arrow {
+    width: 30px;
+    height: 45px;
+    padding: 15px 8px;
+  }
+  .kavya-home-3 .banner-carousel .slick-dots {
+    bottom: -15px;
+  }
+  .banner-section .more-content-grid .card {
+    margin-bottom: 30px;
+  }
+  .kavya-home-3 .featured-posts.section-padding {
+    padding: 0;
+  }
+  .kavya-home-3 .featured-posts .card-350 {
+    margin-top: 0;
+  }
+  .kavya-home-3 .featured-posts .card-500 {
+    margin-bottom: 30px;
+  }
+  .kavya-home-3 .kavya-posts .card .card-img-top {
+    height: 200px;
+  }
+  .kavya-home-3 .kavya-posts .sidebar-posts {
+    margin-top: 0;
+  }
+  .kavya-home-3 .popular-posts .recent-posts {
+    margin-top: 0;
+  }
+}
+/* Home Page 3 Responsive end*/
+
+/* ================================================================================== 
+									5. Archive Page responsive
+===================================================================================== */
+@media screen and (max-width: 991px) {
+  .archive-content .sidebar-posts .card .card-body {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+  .kavya-archive .archive-posts .card .card-body {
+    padding-right: 0;
+    padding-left: 15px;
+  }
+  .kavya-archive-2 .archive-posts {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page-header {
+    text-align: center;
+  }
+  .page-breadcrumb .breadcrumb {
+    justify-content: center;
+  }
+  .pagination-section {
+    margin-top: 30px;
+  }
+  .kavya-archive-3 .card {
+    margin: 0;
+  }
+}
+/* Archive page end */
+
+/* ================================================================================== 
+									6. Single Page responsive
+===================================================================================== */
+@media screen and (max-width: 991px) {
+  .related-posts .card {
+    margin-bottom: 20px;
+  }
+  .blog-img-main {
+    height: 400px;
+  }
+  .blog-desc img {
+    height: 300px;
+  }
+  .kavya-single-2 .blog-title-wrap .title-font {
+    font-size: 30px;
+  }
+  .tags-wrap{
+    flex-direction:column;
+    align-items: flex-start;
+  }
+  .tags-wrap .blog-tags{
+    width:100%;
+    margin-bottom:15px;
+  }
+  .comment-card {
+    padding: 20px;
+  }
+  .comment-card .comment-card {
+    margin-left: 0;
+  }
+  .comment-card .author-date .author img {
+    height: 40px;
+    width: 40px;
+  }
+  .comment-card .author-date span {
+    font-size: 12px;
+  }
+  .kavya-single-4 .blog-img-main,
+  .kavya-single-4 .blog-title-wrap{
+    width:100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .blog-img-main {
+    height:300px;
+  }
+  .blog-desc {
+    padding: 0 20px;
+    text-align: justify;
+  }
+  .kavya-single-2 .blog-title-wrap {
+    width: 100%;
+  }
+  .single-layout .author-section {
+    margin-top: 30px;
+  }
+  .blog-author-info .author-img{
+    height:90px;
+    width:90px
+  }
+  .blog-author-info .author-desc{
+    width:50%;
+  }
+  .kavya-single-4 .blog-title-wrap{
+    position: static;
+    width:100%;
+  }
+}
+/* single page responsive end */
+
+/* ================================================================================== 
+									7. Search Page responsive
+===================================================================================== */
+@media screen and (max-width: 767px) {
+  .search-results .card-img {
+    margin-bottom: 15px;
+  }
+}
+/* Search Page responsive end */
+
+/* ================================================================================== 
+									8. About Page responsive
+===================================================================================== */
+@media screen and (max-width: 991px) {
+  .about-section .about-text {
+    padding: 50px;
+    padding-bottom: 120px;
+  }
+  .about-inner-2 .about-img {
+    margin: 0 50px;
+  }
+  .about-inner-2 .about-text {
+    padding: 30px;
+    padding-top: 100px;
+  }
+  .kavya-about .author-card {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .kavya-about .author-section {
+    margin-bottom: 0;
+  }
+  .about-section {
+    padding: 30px 0;
+  }
+  .about-section .about-text {
+    margin: 0;
+  }
+  .about-inner {
+    height: auto;
+  }
+  .about-section .about-img {
+    margin: 30px;
+    height: 300px;
+  }
+  .about-inner .about-img {
+    margin: -70px 30px 0;
+  }
+  .about-inner-2 .about-text {
+    margin: 0;
+    padding: 0 30px;
+  }
+}
+/* About page responsive end */
+
+/* ================================================================================== 
+									9. Contact Page  responsive
+===================================================================================== */
+@media screen and (max-width: 991px) {
+  .contact-section .contact-info {
+    padding: 40px;
+  }
+  .contact-section .contact-form {
+    padding: 40px;
+  }
+  .contact-section p {
+    margin-bottom: 20px;
+  }
+  .contact-list li {
+    margin: 5px 0;
+  }
+  .contact-info .social-links {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-section .contact-info {
+    margin-bottom: 30px;
+  }
+}
+/* Contact page responsive end */
+
+
+/* ================================================================================== 
+									10. 404 Page  responsive
+===================================================================================== */
+@media screen and (max-width:991px){
+  .error-text-wrapper .title-404{
+    font-size:160px;
+  }
+}
+@media screen and (max-width:767px){
+  .error-text-wrapper .title-404{
+    font-size:130px;
+  }
+  .error-text-wrapper .sub-404{
+    font-size:40px;
+  }
+  .error-text-wrapper .btn-solid{
+    padding:7px 20px;
+  }
+  .error-content {
+    height:calc(100vh- 100px);
+  }
+  .error-text h2{
+    font-size:30px!important;
+  }
+
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="">
+    First Name  : <input type="text" id="firstName"> <span id="firstNameError"></span><br><br>
+    Last Name : <input type="text" id="lastName"><br><br>
+    Full Name   : <input type="text" id="fullName"><br><br>
+    <input type="submit" value="submit" id="btn"><br><br>
+</form>
+
+<table border="1">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Full Name</th>
+    </tr>
+    <tr>
+        <td id="result1"> </td>
+        <td id="result2"> </td>
+        <td id="result3"> </td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-3.6.4.min.js"></script>
+
+<script>
+    $('#firstName').keyup(function () {
+
+        var firstName = $(this).val();
+        if (firstName.length >= 5 && firstName.length <=15){
+            $('#result1').html(firstName);
+            $('#firstNameError').text(' ');
+        }else {
+            $('#firstNameError').text("Enter atleast 5 to 15 char..");
+        }
+
+
+    });
+    $('#lastName').keyup(function () {
+        var lastName = $(this).val();
+        $('#result2').html(lastName);
+
+    });
+    $('#firstName').keyup(function () {
+        var firstName = $('#firstName').val();
+        var lastName = $('#lastName').val();
+        $('#result3').html(firstName+lastName);
+
+    });
+    $('#fullName').hover(function () {
+        var firstName = $('#firstName').val();
+        var lastName = $('#lastName').val();
+        $('#result3').html(firstName+lastName);
+
+    });
+
+
+
+    // $('#btn').click(function () {
+    //     var firstName = $('#firstName').val();
+    //     var lastName = $('#lastName').val();
+    //     $('#fullName').val(firstName+ ' ' +lastName)
+    // })
+
+
+</script>
+
+</body>
+</html>

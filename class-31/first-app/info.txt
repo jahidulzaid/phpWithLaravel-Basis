@@ -1,0 +1,11 @@
+1. create project from documentation
+2.
+
+ MVC - Model view Controller
+
+M - model= class, data=database
+V - view =
+C - controller = class, logic
+
+3. make a controller using the command below
+    php artisan make:controller HomeController

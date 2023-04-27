@@ -1,0 +1,105 @@
+/**
+ * preloader css
+ */
+
+.preloader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    z-index: 99999;
+    transition: 1s;
+}
+
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes preloader-circle-o {
+    0% {
+        opacity: 1;
+        transform: translate(0 0)
+    }
+
+    49.99% {
+        opacity: 1;
+        transform: translate(40px, 0)
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(40px, 0)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0, 0)
+    }
+}
+
+@keyframes preloader-circle {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    50% {
+        transform: translate(40px, 0)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.preloader-circle div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 30px;
+    left: 10px;
+}
+
+.preloader-circle div:nth-child(1) {
+    background: #f4976c;
+    animation: preloader-circle 1s linear infinite;
+    animation-delay: -0.5s;
+}
+
+.preloader-circle div:nth-child(2) {
+    background: #303c6c;
+    animation: preloader-circle 1s linear infinite;
+    animation-delay: 0s;
+}
+
+.preloader-circle div:nth-child(3) {
+    background: #f4976c;
+    animation: preloader-circle-o 1s linear infinite;
+    animation-delay: -0.5s;
+}
+
+.preloader {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+}
+
+.preloader-circle {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(0.51);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+}
+
+.preloader-circle div {
+    box-sizing: content-box;
+}
